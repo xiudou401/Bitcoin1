@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 import Content from '@/modules/home/Content';
-import React from 'react';
+
+import Image from 'next/image';
 
 const Home = () => {
   return (
