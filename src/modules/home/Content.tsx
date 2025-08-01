@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
 import CommentBtn from './CommentBtn';
+
 import PostList from './PostList';
+
 
 const Content = () => {
   return (
     <>
       <Image
         src="/images/bitcoin-banner.jpeg"
+
         alt="bitcoin-banner"
         width={1584}
         height={396}
@@ -24,6 +27,7 @@ const Content = () => {
         <CommentBtn />
       </div>
       <PostList />
+
     </>
   );
 };

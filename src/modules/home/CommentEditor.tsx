@@ -1,3 +1,6 @@
+
+'use client';
+
 import {
   Dialog,
   DialogBackdrop,
@@ -22,6 +25,7 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
   const onContentChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setContent(e.target.value);
   };
+
   return (
     <Dialog
       open={isOpen}
@@ -31,7 +35,11 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
     >
       <DialogBackdrop className="fixed inset-0 bg-black/70" />
       <DialogPanel className="max-w-lg z-50 space-y-4 bg-[#131313] border border-white/10 p-4 rounded-lg">
-        <DialogTitle>What's on your mind?</DialogTitle>
+
+        <DialogTitle className="font-bold text-white">
+          What's on your mind?
+        </DialogTitle>
+
         <input
           placeholder="Title"
           type="text"
