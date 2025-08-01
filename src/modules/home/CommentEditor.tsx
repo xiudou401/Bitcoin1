@@ -46,10 +46,22 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
           onChange={onContentChange}
         />
         <div className="flex gap-4 text-sm justify-end">
-          <button className="text-white/50 font-bold cursor-pointer">
+          <button
+            className="text-white/50 font-bold cursor-pointer"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
             Cancel
           </button>
-          <button className="text-white font-bold cursor-pointer">Post</button>
+          <button
+            className="text-white font-bold cursor-pointer"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
+            Post
+          </button>
         </div>
       </DialogPanel>
     </Dialog>
