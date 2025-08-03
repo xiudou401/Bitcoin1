@@ -2,7 +2,9 @@ import Layout from '@/components/Layout';
 import Content from '@/modules/post/Content';
 import React from 'react';
 
+
 const Post = () => {
+
   return (
     <Layout>
       <Content />
@@ -10,4 +12,6 @@ const Post = () => {
   );
 };
 
-export default Post;
+
+export default Page;
+

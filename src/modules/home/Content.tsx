@@ -2,7 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 import CommentBtn from './CommentBtn';
 
+
 import PostList from './PostList';
+
 
 
 const Content = () => {
@@ -11,6 +13,7 @@ const Content = () => {
       <Image
         src="/images/bitcoin-banner.jpeg"
 
+
         alt="bitcoin-banner"
         width={1584}
         height={396}
@@ -18,6 +21,7 @@ const Content = () => {
       />
       <h1 className="text-2xl font-bold mt-2">@bitcoin</h1>
       <p className="text-sm text-white/50 mt-2">
+
         Bitcoin is a decentralized digital currency that enables instant,
         peer-to-peer transactions without intermediaries. It is based on
         blockchain technology, which is a distributed ledger that records
