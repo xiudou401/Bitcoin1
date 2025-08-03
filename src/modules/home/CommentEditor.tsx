@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+
+'use client';
+
 
 import {
   Dialog,
@@ -6,6 +8,9 @@ import {
   DialogPanel,
   DialogTitle,
 } from '@headlessui/react';
+
+import { useState } from 'react';
+
 
 interface CommentEditorProps {
   isOpen: boolean;
@@ -19,9 +24,13 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
   const onTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(e.target.value);
   };
+
+
   const onContentChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setContent(e.target.value);
   };
+
+
   return (
     <Dialog
       open={isOpen}
@@ -31,9 +40,13 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
     >
       <DialogBackdrop className="fixed inset-0 bg-black/70" />
       <DialogPanel className="max-w-lg z-50 space-y-4 bg-[#131313] border border-white/10 p-4 rounded-lg">
+
+
         <DialogTitle className="font-bold text-white">
           What's on your mind?
         </DialogTitle>
+
+
         <input
           placeholder="Title"
           type="text"
@@ -50,13 +63,20 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
         <div className="flex gap-4 text-sm justify-end">
           <button
             className="text-white/50 font-bold cursor-pointer"
-            onClick={() => setIsOpen(false)}
+
+            onClick={() => {
+              setIsOpen(false);
+            }}
+
           >
             Cancel
           </button>
           <button
             className="text-white font-bold cursor-pointer"
+
             onClick={() => setIsOpen(false)}
+
+
           >
             Post
           </button>

@@ -16,7 +16,9 @@ const PostList = () => {
   return (
     <div className="mt-8">
       {mockPosts.map((post: Post) => (
+
         <Link key={post.id} href={`/posts/${post.id}`}>
+
           <Post post={post} />
         </Link>
       ))}
