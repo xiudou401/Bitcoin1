@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import CommentBtn from './CommentBtn';
+import PostList from './PostList';
 
 const Content = () => {
   return (
@@ -22,6 +23,7 @@ const Content = () => {
       <div className="w-full mt-8">
         <CommentBtn />
       </div>
+      <PostList />
     </>
   );
 };

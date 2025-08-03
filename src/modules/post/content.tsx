@@ -2,7 +2,6 @@
 
 import Post from '@/components/Post';
 import { useRouter } from 'next/navigation';
-
 import React from 'react';
 
 const mockPost: Post = {
@@ -14,6 +13,7 @@ const mockPost: Post = {
 
 const Content = () => {
   const router = useRouter();
+
   return (
     <div>
       <button
